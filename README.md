@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🔥 Resume Roaster
 
-## Getting Started
+**Get your resume brutally roasted by AI.** No sugar-coating. No mercy. Just the truth you need to hear.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8?logo=tailwindcss)
+![Deployed on Vercel](https://img.shields.io/badge/Vercel-Deployed-black?logo=vercel)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Live Demo
+
+**[resumeroaster.vercel.app](https://ai-resume-roaster-seven.vercel.app)**
+
+## ✨ Features
+
+- 🔥 **3 Roast Levels** — Mild, Medium, and Brutal
+- 🤖 **AI-Powered** — Uses Claude to analyze and roast your resume
+- 💀 **Smart Fallback** — Demo mode detects buzzwords, missing metrics, and weak formatting
+- 🐦 **Share on Twitter** — One-click sharing for viral potential
+- 🌙 **Dark Mode UI** — Sleek, modern design
+- ⚡ **Fast** — Built with Next.js 16 + Turbopack
+- 🔒 **Privacy First** — Resumes are never stored
+
+## 📸 Preview
+
+```
+Paste resume → Pick roast level → Get destroyed → Share the pain
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Framework**: Next.js 16 (App Router)
+- **Styling**: Tailwind CSS 4
+- **AI**: Anthropic Claude API
+- **Hosting**: Vercel
+- **Language**: JavaScript
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🏃 Run Locally
 
-## Learn More
+```bash
+git clone https://github.com/Halfmoon0707/ai-resume-roaster.git
+cd ai-resume-roaster
+npm install
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:3000](http://localhost:3000)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔑 Environment Variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Variable | Description | Required |
+|----------|-------------|----------|
+| `ANTHROPIC_API_KEY` | Claude API key for AI roasts | Optional (demo mode works without it) |
 
-## Deploy on Vercel
+Add to `.env.local`:
+```
+ANTHROPIC_API_KEY=your_key_here
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+ai-resume-roaster/
+├── src/
+│   └── app/
+│       ├── api/roast/route.js   # AI roasting endpoint
+│       ├── globals.css           # Global styles
+│       ├── layout.js             # Root layout + SEO
+│       └── page.js               # Main UI
+├── public/                       # Static assets
+└── package.json
+```
+
+## 🤝 Contributing
+
+PRs welcome. Make it roast harder.
+
+## 📄 License
+
+MIT — Roast freely.
+
+---
+
+**Built with 🔥 and zero chill.**
